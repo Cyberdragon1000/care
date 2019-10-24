@@ -15,7 +15,6 @@
 
 <style>
     #truebody {
-        padding-left: 120px;
         padding-top: 52px;
     }
     
@@ -25,7 +24,7 @@
     }
     
     .navbar-nav>li {
-        float: none;
+        float: right;
         display: table-cell;
         text-align: center;
     }
@@ -35,7 +34,6 @@
     }
     
     .container-fluid {
-        padding-left: 0px;
         background-color: navy;
     }
     
@@ -58,36 +56,31 @@
     .affix+.container-fluid+.container {
         padding-top: 0px;
     }
-</style>
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }</style>
 
 <body data-spy="affix" data-target=".navbar" data-offset="0">
     <nav class="navbar  navbar-fixed-top">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar">
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>                       
-                </button>
-            </div>
+            <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#myNavbar"></button>
             <div class="collapse navbar-collapse" id="navigation-elements">
                 <ul class="nav navbar-nav">
-                    <li><button type="button" class="btn" data-toggle="collapse" id="care" data-target="#sidebar">CARE ++</button></li>
+                    <img src="Care++.png" width="100" height="50" type="button" class="btn" data-toggle="collapse" id="care" data-target="#sidebar" />
+                    <li><a name="" id="" href="Signup.html" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span> LOG IN</a></li>
+                    <li><a name="" id="" href="Login.html" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span>SIGN UP</a></li>
                     <li><a data-toggle="tab" href="#supportus">Support us</a></li>
                     <li><a data-toggle="tab" href="#contactus">contact us</a></li>
                     <li><a data-toggle="tab" href="#feedback">Feedback</a></li>
-                    <li><a name="" id="" href="Signup.html" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-log-in"></span> LOG IN</a></li>
-                    <li><a name="" id="" href="Login.html" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-user"></span>SIGN UP</a></li>
+
                 </ul>
-
             </div>
-
         </div>
-        </div>
-        <ul class="nav nav-pills nav-stacked collapse col-xs-1 col-sm-1 col-md-1 col-lg-1" role="tablist" id="sidebar">
+        </div>    
+    <ul class="nav nav-pills nav-stacked collapse col-xs-1 col-sm-1 col-md-1 col-lg-1" role="tablist" id="sidebar">
             <li><a data-toggle="tab" href="#home">HOME</a></li>
             <li><a data-toggle="pill" href="#news">News Articles</a></li>
             <li><a data-toggle="pill" href="#doctors">About doctors</a></li>
